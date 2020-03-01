@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+<title>Alessandra Ulinick</title>
+<style>
+    
+    body{
+
+  margin:0;
+  padding:0;
+    }
+    header{
+        font-family:cursive;
+        color:black;
+        text-shadow: 2px 2px 20px grey;
+        background: rgba(0, 0, 0, 0.7)
+        padding: 20px;
+        height: 100px;
+        font-size: 20pt;
+    }
+section{
+    background: rgba(48, 42, 42,0.7);
+    color:rosybrown;
+    padding:80px;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    color: black;
+    padding:20px;
+    background:rgba(238, 160, 71, 0.678);
+}
+h2{
+    color:orange;
+    font-size: 20pt;
+    font-family: 'Cutive Mono';
+    text-align: center;
+    border: darkcyan;
+    border-style: double;
+    border-radius: 30px;
+    margin:20px 590px 0px 590px;
+}
+h3{
+    color:orange;
+    font-size: 20pt;
+    font-family: 'Cutive Mono';
+    text-align: center;
+    border:darkcyan;
+    border-style: double;
+    border-radius: 30px;
+    margin: 0px 580px 20px 580px;
+    height: 35px;
+}
+button{
+ background: rgb(145, 165, 165);
+ color:black;
+ border-radius:20px;  
+}
+p{
+    font-size: 14pt;
+    font-family: 'Cinzel';
+    margin-left: 300px;
+    margin-right: 300px;
+}                               
+.facebook{
+ height:50pt ;
+ width:50pt ;
+ margin-left: 200px;
+ border-radius: 50px;
+ border-style: dashed;
+}       
+.instagram{
+height: 50pt;
+width: 50pt;
+margin-left: 300px;
+border-radius: 50px;
+border-style: dashed;
+border-color:mediumvioletred;
+
+}       
+.whatsapp{
+    height: 50pt;
+    width: 50pt;
+    margin-left: 300px;
+    border-radius: 50px;
+    border-style: dashed;
+    border-color: seagreen;
+}               
+form{
+    margin-left: 450px;
+    margin-right: 400px;
+ border-style: dotted;
+ text-align: center;
+ border-color: darkcyan;
+ font-family:'Cinzel';
+ font-size: 17px;
+ margin-bottom: 30px;
+
+}                 
+div{
+    background-image: url("triangulo.jpg");
+    background-size: cover;
+    height:350px;
+}             
+.menu{
+    font-family: 'Cinzel';
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    list-style: none;
+    top:80px;
+    position:absolute;
+    width: 100%;
+}
+.menuum{
+    text-decoration: none;
+    color:black;
+    display:block;
+    padding:20px 3px;
+}
+img{
+    width: 70px;
+    border-radius: 50px;
+}
+input[type="checkbox"]{
+    display:none;
+}
+nav{
+    background-color: rgba(238, 200, 96, 0.383);
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    transition: all 0.5s;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+a.menuum:hover{
+    background-color: darkcyan;
+    color:black;
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.c400{
+    display: block;
+}
+@media (max-width:300px){
+    .c400{
+        display: none;
+    }
+    
+}
+</style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" id="chec">
+        <label for="chec">
+            <img src="menulateral2.0.jpg">
+        </label>
+        <nav>
+            <ul class="menu">
+                <li><a class="menuum" href="Galery.html">Galery</a></li>
+            <li><a class="menuum" href="">News</a></li>
+            <li><a class="menuum" href="">Projects</a></li>
+            <li><a class="menuum" href="">Professional Hints</a></li>
+            </ul>
+        </nav>  
+  </div> 
+<h2> About me</h2>
+<p>Hey, I'm Alessandra Ulinick, I'm 18 years old and I'm studying Software Engineering at Ponta Grossa State University, hoping to became a web designer. Also, for the past few years I have been studying English in order to increase my grammar knowledge and my fluency level.</p>
+
+<h3>Contact me</h3>
+<form
+action="mailto:alessandraulinickb@gmail.com"
+method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="reset">
+</form>
+<footer>
+    <ul>
+        <a href="https://www.facebook.com/alessandra.ulinick.7">
+            <img class="facebook" alt="Facebook" src="facebook.jpg">
+        </a>
+        <a href="https://www.instagram.com/alessandra_ulinick/?hl=en">
+        <img class="instagram" alt="Instagram" src="insta.jpg">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=+5542999835639">
+        <img class="whatsapp" alt="whatsapp" src="whatsapp.jpg">
+        </a>
+    </ul>
+</footer>
+</body>
+</html>
